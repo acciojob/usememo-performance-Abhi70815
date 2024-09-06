@@ -13,7 +13,7 @@ const App = () => {
         res.push({name: `Todo ${i+1}`, status:"active"});
       }
       else{
-        res.push({name:`Todo ${i+1}`, status:"complete"});
+        res.push({name:`Todo ${i+1}`, status:"completed"});
       }
     }
     setData(res);
@@ -25,8 +25,8 @@ const App = () => {
     else if(status=== "active"){
       return val.status === "active";
     }
-    else if(status === "complete"){
-      return val.status ==="complete";
+    else if(status === "completed"){
+      return val.status ==="completed";
     }
   });
 
@@ -38,14 +38,14 @@ const App = () => {
       <div className="btn_box">
     <button onClick={()=>setStatus("all")}>All</button>
     <button onClick={()=>setStatus("active")}>Active</button>
-    <button onClick={()=>setStatus("complete")}>completed</button>
+    <button onClick={()=>setStatus("completed")}>completedd</button>
       </div>
       <hr/>
       <h2>Note : List is artificially slowed-down!</h2>
       <ul>
         {handleFilterData.map((val,i)=>{
           return(
-            <li style={{ textDecoration: val.status === "completed" ? "line-through": "none"}} key={i}>
+            <li style={{ textDecoration: val.status === "completedd" ? "line-through": "none"}} key={i}>
              {val.name ?? ""}
             </li>
           )
