@@ -38,7 +38,7 @@ const App = () => {
       <div className="btn_box">
     <button onClick={()=>setStatus("all")}>All</button>
     <button onClick={()=>setStatus("active")}>Active</button>
-    <button onClick={()=>setStatus("completed")}>completedd</button>
+    <button onClick={()=>setStatus("completed")}>Completed</button>
       </div>
       <hr/>
       <h2>Note : List is artificially slowed-down!</h2>
